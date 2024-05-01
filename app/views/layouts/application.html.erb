@@ -12,7 +12,9 @@
   </head>
 
   <body>
-    <main class="container mx-auto mt-28 px-5 flex">
+    <main class="container flex px-5 mx-auto mt-28">
+      <!-- Add a turbo_frame_tag to your layout so that you can target it from anywhere in your application  -->
+      <%= turbo_frame_tag "modal" %>
       <%= yield %>
     </main>
   </body>
